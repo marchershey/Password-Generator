@@ -8,11 +8,31 @@ There are no unreleased changes at this time
 
 ---
 
-## v1.0.1 - 12/11/2019
+## v2.0.0 - 12/11/2019
+
+> **Important** - This code has quite a bit of breaking changes.
 
 ### Added
 
-- Ability to change which symbols are used to generate password when "Symbols" are included.
+- **New Feature:**
+  - Reset Symbols - adds the ability to reset the symbols used to the default
+
+### Changes
+
+- **consts**
+  - randCharArray -> character_array
+  - trueTypes -> types_true
+  - countTypes -> types_count
+  - symbols -> symbols_val
+
+---
+
+## v1.1.0 - 12/11/2019
+
+### Added
+
+- **New Feature:**
+  - Change Symbols - Ability to change which symbols are used to generate password when "Symbols" are included.
 
 ### Changed
 

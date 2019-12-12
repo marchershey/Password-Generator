@@ -8,7 +8,7 @@ const button = document.getElementById('generate_button');
 const copy = document.getElementById('copy');
 const copy_icon = document.getElementById('copy_icon');
 
-const randCharArray = {
+const character_array = {
 	lower: randomLowercase,
 	upper: randomUppercase,
 	number: randomNumber,
@@ -43,17 +43,17 @@ function execute() {
 
 function generate(length, lower, upper, number, symbol) {
 	let password = '';
-	const countTypes = lower + upper + number + symbol;
-	const trueTypes = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+	const types_count = lower + upper + number + symbol;
+	const types_true = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
 
-	if (countTypes === 0) {
+	if (types_count === 0) {
 		return '...';
 	}
 
-	for (let i = 0; i < length; i += countTypes) {
-		trueTypes.forEach(type => {
+	for (let i = 0; i < length; i += types_count) {
+		types_true.forEach(type => {
 			const random = Object.keys(type)[0];
-			password += randCharArray[random]();
+			password += character_array[random]();
 		});
 	}
 
@@ -73,8 +73,12 @@ function randomNumber() {
 }
 
 function randomSymbol() {
-	const symbols = document.getElementById('symbols_input').value;
-	return symbols[Math.floor(Math.random() * symbols.length)];
+	const symbols_val = document.getElementById('symbols_input').value;
+	return symbols_val[Math.floor(Math.random() * symbols_val.length)];
+}
+
+function resetSymbols() {
+	symbols_input.value = '!@#$%^&*(){}[]=<>/,.';
 }
 
 function toggleSymbEdit() {

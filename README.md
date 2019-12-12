@@ -1,6 +1,6 @@
 # Password Generator
 
-### Version 1.0.1 - [[changelog](https://github.com/marchershey/Password-Generator/blob/master/CHANGELOG.md)] [[demo](https://marchershey.github.io/Password-Generator/src/)]
+### Version 2.0.0 - [[changelog](https://github.com/marchershey/Password-Generator/blob/master/CHANGELOG.md)] [[demo](https://marchershey.github.io/Password-Generator/src/)]
 
 A simple vanilla javascript password generator.
 
