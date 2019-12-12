@@ -15,7 +15,7 @@ A simple vanilla javascript password generator.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/marchershey/Password-Generator/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/marchershey/Password-Generator/tags)
 
 ## License
 
