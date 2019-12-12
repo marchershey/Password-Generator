@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Password Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Style -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/js/all.js" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+		<style>
+			body {
+				background-color: #cfebff4e;
+				height: 90vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			input[type='text']:disabled {
+				color: #000;
+			}
+		</style>
+
+		<!-- Scripts -->
+		<script src="main.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/js/all.js"></script>
+	</head>
+
+	<body>
+		<div class="container vh-100">
+			<div class="row align-items-center h-100">
+				<div class="col-xs-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto">
+					<div class="card">
+						<div class="card-header text-center font-weight-bold">
+							Javascript Password Generator 1.0.0
+						</div>
+						<div class="card-body">
+							<form>
+								<!--Results-->
+								<div class="form-group row">
+									<div class="col">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="inputGroup-sizing-default">Password:</span>
+											</div>
+											<input class="form-control bg-light text-center text-truncate border-right-0" type="text" name="" id="result" disabled />
+											<div class="input-group-append">
+												<span class="input-group-text bg-light" id="copy"><i class="fas fa-clipboard" aria-hidden="true"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--Password Lenth-->
+								<div class="form-group row">
+									<div class="col-9">
+										<label class="" for="">Password Length</label>
+									</div>
+									<div class="col-3">
+										<input type="number" id="length" value="12" class="form-control form-control-range form-control-sm" min="4" max="24" />
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<div class="col">
+										<strong>Include in password:</strong>
+									</div>
+								</div>
+
+								<!--Lowercase Letters-->
+								<div class="form-group row">
+									<div class="col">
+										<div class="custom-control custom-checkbox mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="lowercase" checked />
+											<label class="custom-control-label" for="lowercase">Lowercase letters</label>
+										</div>
+									</div>
+								</div>
+
+								<!--Uppercase Letters-->
+								<div class="form-group row">
+									<div class="col">
+										<div class="custom-control custom-checkbox mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="uppercase" checked />
+											<label class="custom-control-label" for="uppercase">Uppercase letters</label>
+										</div>
+									</div>
+								</div>
+
+								<!--Numbers-->
+								<div class="form-group row">
+									<div class="col">
+										<div class="custom-control custom-checkbox mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="numbers" checked />
+											<label class="custom-control-label" for="numbers">Numbers</label>
+										</div>
+									</div>
+								</div>
+
+								<!--Symbols-->
+								<div class="form-group row">
+									<div class="col">
+										<div class="custom-control custom-checkbox mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="symbols" checked />
+											<label class="custom-control-label" for="symbols">Symbols</label>
+										</div>
+									</div>
+								</div>
+
+								<!--Submit button-->
+								<div class="form-group row">
+									<div class="col">
+										<button type="button" name="" id="generate_button" class="btn btn-primary btn-block">Generate</button>
+									</div>
+								</div>
+							</form>
+
+							<footer class="text-center small">
+								<p class="mb-0">Created by <a href="https://github.com/marchershey">Marc Hershey</a></p>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
