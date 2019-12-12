@@ -4,7 +4,7 @@
 
 A simple vanilla javascript password generator.
 
-![demo image](https://i.imgur.com/Gj7s1d9.png)
+![demo image](https://i.imgur.com/SSV4zEl.png)
 
 ## Getting Started
 
