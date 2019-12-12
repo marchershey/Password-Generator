@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Password Generator</title>
+		<title>Password Generator v1.0.0 by Marc Hershey</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -33,7 +33,7 @@
 				<div class="col-xs-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 mx-auto">
 					<div class="card">
 						<div class="card-header text-center font-weight-bold">
-							Javascript Password Generator 1.0.0
+							Password Generator v1.0.1
 						</div>
 						<div class="card-body">
 							<form>
@@ -103,7 +103,12 @@
 									<div class="col">
 										<div class="custom-control custom-checkbox mr-sm-2">
 											<input type="checkbox" class="custom-control-input" id="symbols" checked />
-											<label class="custom-control-label" for="symbols">Symbols</label>
+											<label class="custom-control-label" for="symbols">Symbols <a href="#" class="small" onclick="toggleSymbEdit()">edit</a></label>
+										</div>
+										<div id="symbols_edit" class="small text-center mb-0 mt-2" style="display:none;">
+											<input type="text" name="" id="symbols_input" class="form-control form-control-sm text-center" value="!@#$%^&*(){}[]=<>/,." />
+											<p class="small">Edit the symbols to use in your password.</p>
+											<hr class="mb-0" />
 										</div>
 									</div>
 								</div>

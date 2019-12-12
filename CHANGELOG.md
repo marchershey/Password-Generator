@@ -6,7 +6,22 @@ All notable changes to this project will be documented in this file. This projec
 
 There are no unreleased changes at this time
 
-## Version 1.0.0 - Initial Release
+---
+
+## v1.0.1 - 12/11/2019
+
+### Added
+
+- Ability to change which symbols are used to generate password when "Symbols" are included.
+
+### Changed
+
+- Title of the webpage to include version number and my name
+- Header of the card block for simplicity and reflect version number
+
+---
+
+## v1.0.0 - Initial Release
 
 ### Changelog
 

@@ -73,6 +73,15 @@ function randomNumber() {
 }
 
 function randomSymbol() {
-	const symbols = '!@#$%^&*(){}[]=<>/,.';
+	const symbols = document.getElementById('symbols_input').value;
 	return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+function toggleSymbEdit() {
+	const editSymb = document.getElementById('symbols_edit');
+	if (editSymb.style.display === 'none') {
+		editSymb.style.display = 'block';
+	} else {
+		editSymb.style.display = 'none';
+	}
 }
